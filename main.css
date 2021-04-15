@@ -1,3 +1,67 @@
-h1{
-    color: blue;
+body{
+    margin: 0;
+    padding: 0;
+    background: url(grand-canyon-sunset-1200x627.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.box{
+    width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding:40px;
+    text-align:center ;
+    margin: auto;
+    margin-top: 10%;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.box-img{
+    width: 250px;
+    border-radius: 50%;
+    height: 150px;
+}
+
+.box h1{
+    font-size: 40px;
+    font-weight: 100;
+
+}
+
+.box h5{
+    font-size: 25px;
+    font-weight: 100;
+
+}
+
+.box p{
+    text-align: justify;
+
+}
+
+ul{
+    margin:0;
+    padding: 0;
+
+}
+
+.box li{
+    display: inline-block;
+    margin:6px;
+    list-style: none;
+}
+
+.box li a{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    letter-spacing: 10px;
+    transition: all ease-in-out 250ms;
+
+}
+
+.box li a:hover
+{
+    color: #b9b9b9;
 }
