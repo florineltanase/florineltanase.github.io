@@ -260,9 +260,12 @@ header.topBotomBordersOut a:hover:before, header.topBotomBordersOut a:hover:afte
 
 }
 
+/* Pagina de contact */
+
 .contact-me{
     padding:40px 0;
     background-size: cover;
+    
 }
 
 .contact-me h1{
@@ -288,20 +291,36 @@ header.topBotomBordersOut a:hover:before, header.topBotomBordersOut a:hover:afte
 
 .contact-form-text{
     display: block;
-    width: 100%;
+    width: 95%;
     box-sizing: border-box;
     margin: 16px 30px;
     padding-left: 20px;
     border: 0;
-    background:#111;
+    background:rgba(0, 0, 0, 0.9);
     padding:20px 40px;
     outline: none;
-    color: #ddd;
+    color: white;
     transition: 0.5s;
 }
 
-.contact-form-text:hover{
-    box-sizing: 0 0 10px 4px #34495e;
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+ 
+}
+
+.contact-form-btn{
+    margin-left: 22px;
+    border: 0;
+    background:#34495e;
+    color: #fff;
+    padding:12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.contact-form-btn:hover{
+    background: #2980b9;
 }
 
 
