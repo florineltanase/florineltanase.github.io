@@ -1,41 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+    <i class="fa fa-spinner"></i>
     <header class="container topBotomBordersOut">
         <img src="logo.jpeg" alt="logo" class="logo">
         <nav>
+
             <ul class="nav_links">
-                <li><a href="#" class="lks">About me</a></li>
-                <li><a href="#" class="lks">My Projects</a></li>
-                <li><a href="#" class="lks">Contact</a></li>
+                <li><a href="#home" class="lks">About me</a></li>
+                <li><a href="#my-projects" class="lks">My Projects</a></li>
+                <li><a href="#contact-personal" class="lks">Contact</a></li>
             </ul>
         </nav>
-       <button class="btn">Send a direct message</button>
+        <button class="btn">Send a direct message</button>
     </header>
 
 
 
-    <div class="box">
+    <div class="box" id="home">
         <img src="eu.png" alt="gato" class="box-img">
         <h1>Florinel Alexandru Tanase</h1>
-        <h5>Nimic Interesant</h5>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, incidunt?</p>
+        <h5>Student</h5>
+        <p>Universitatea "Ștefan cel Mare" Suceava</p>
+        <p>Facultatea Inginerie Electrică şi Ştiinţa Calculatoarelor</p>
 
         <ul>
-            <li><a href="#"><i  class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
         </ul>
     </div>
-   
+
+    <div class="projects" id="my-projects">
+        <h2>My projects</h2>
+        <div class="project-content">
+
+            <div class="project">
+                <h4>Project1</h4>
+                <div class="project-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iste placeat commodi velit
+                        repudiandae nulla dolor impedit veritatis at rerum!</p>
+                </div>
+                <div class="project-image">
+                    <img src="./project1.png" alt="pj1">
+                </div>
+                
+
+            </div>
+
+            <div class="project">
+                <h4>Project2</h4>
+                <div class="project-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quia ex nisi qui sit veritatis
+                        dolores aliquid commodi unde odio.</p>
+                </div>
+                <div class="project-image">
+                    <img src="./project2.png" alt="pj2">
+                </div>
+
+               
+            </div>
+
+            <div class="project">
+                <h4>Project3</h4>
+                <div class="project-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ex! Quaerat ducimus aspernatur
+                        maxime accusamus qui? Minus dolores cupiditate hic!</p>
+                </div>
+                <div class="project-image">
+                    <img src="./project3.jpg" alt="pj3">
+                </div>
+
+                
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="contact-me" id="contact-personal">
+
+        <div class="border"></div>
+        <h1>Contact me</h1>
+
+        <form action="index.html" class="contact-form" method="post"></form>
+        <input type="text" class="contact-form-text" placeholder="Your name">
+        <input type="text" class="contact-form-text" placeholder="Your email">
+        <input type="text" class="contact-form-text" placeholder="Your phone-number">
+        <textarea class="contact-form-text" placeholder="Your message"></textarea>
+        <input type="submit" class="contact-form-btn" value="Send">
+    </div>
+
+    <script src="./slider.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
 
 </body>
+
 </html>

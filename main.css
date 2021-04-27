@@ -37,9 +37,11 @@ body{
 }
 
 .box p{
-    text-align: justify;
+    text-align: center;
+
 
 }
+
 
 .box li{
     display: inline-block;
@@ -103,6 +105,9 @@ button{
 }
 
 
+
+/* Tranzitii nav */
+
 header.container
 {
     font-family: Raleway;
@@ -150,3 +155,155 @@ header.topBotomBordersOut a:hover:before, header.topBotomBordersOut a:hover:afte
     opacity: 1;
     transform: translateY(0px);
 }
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 400px) {
+    nav {
+        padding-top: 3px;
+        align-items: center;
+        
+    }
+
+    button{
+        height: 55px;
+        margin:10px;
+        
+    }
+
+    .box h1{
+        font-size: 20px;
+        font-weight: 100;
+    
+    }
+
+    .box{
+        align-items: center;
+    }
+
+    .box-img{
+        width: 150px;
+        border-radius: 50%;
+        height: 100px;
+    }
+  
+
+
+}
+
+/* Sectiunea projects */
+
+.projects{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+   
+}
+
+.projects h2{
+    text-transform: uppercase;
+    position: relative;
+    
+
+}
+
+.project h4{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.project p{
+    font-size: 18px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.project-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.project {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 350px;
+    width: 320px;
+    margin: 10px;
+    
+
+    
+}
+
+.project-image img{
+    width: 220px;
+    height: 120px;
+}
+
+.projects .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.project:hover{
+
+    transition: 0.7s ease-in-out;
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.contact-me{
+    padding:40px 0;
+    background-size: cover;
+}
+
+.contact-me h1{
+    text-align: center;
+    color: white;
+
+}
+
+.border {
+    width: 100px;
+    height: 10px ;
+    background:#34495e ;
+    margin:40px auto;
+}
+
+
+.contact-form{
+    max-width: 600px;
+    margin:auto;
+    padding:0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 30px;
+    padding-left: 20px;
+    border: 0;
+    background:#111;
+    padding:20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+.contact-form-text:hover{
+    box-sizing: 0 0 10px 4px #34495e;
+}
+
+
+
+
